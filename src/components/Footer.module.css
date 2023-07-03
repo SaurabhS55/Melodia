@@ -1,0 +1,50 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .cur {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  .button:hover {
+    color: #1db954;
+  }
+  
+  .slider {
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  .sliderTrack {
+    width: 100%;
+    height: 20px;
+    background-color: #ffcccc;
+  }
+  
+  .sliderFilledTrack {
+    background-color: tomato;
+  }
+  
+  .sliderThumb {
+    box-sizing: border-box;
+    width: 10px;
+    height: 100%;
+    background-color: tomato;
+    color: tomato;
+  }

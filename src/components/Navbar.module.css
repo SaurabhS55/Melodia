@@ -1,0 +1,31 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+.list li{
+    list-style: none;
+    margin: 10px 0;
+}
+.list li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(157, 153, 153);
+    font-size: 1.3rem;
+}
+.list li a:hover
+{
+    color: white;
+}
+
+.list li a.active{
+    color: white;
+    font-weight: bold;
+}
+.list li a svg{
+    margin-right: 25px;
+    filter: invert(0.8);
+}

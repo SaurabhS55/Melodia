@@ -1,0 +1,40 @@
+.button{
+    width:200px;
+    height:50px;
+    border-radius: 15px;
+    background-color: #282d2a;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.button:hover{
+    border-radius: 25px;
+    border: 2px solid #625f66;
+    filter: brightness(1.2);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgb(33, 33, 33); */
+    width: 95vw;
+    height: 90vh;
+}
+.login::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../assets/melodia.png') no-repeat;
+    background-position:center center;
+    background-size: 75%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.3;
+}

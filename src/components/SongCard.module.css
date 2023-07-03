@@ -1,0 +1,89 @@
+.songcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;    
+    width: 200px;
+    height: 250px;
+    box-shadow: 0px 2px 4px rgba(113, 108, 108, 0.8);
+    background-color: rgb(47, 44, 44);
+}
+.songcard:hover{
+    background-color: rgb(71, 66, 66);
+    transform: scale(1.02);
+    border-bottom: 2px solid #ccc;
+    /* opacity: 1; */
+}
+.songinfo{
+    display: flex;
+    flex-direction: column;
+    gap: -0.9rem;
+    width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+}
+.play{
+    background-color: rgb(34, 156, 34);
+    padding: 2px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3 ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(30px);
+}
+.pause{
+    background-color: rgb(34, 156, 34);
+    padding: 2px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    align-items: center;
+    /* opacity: 0;
+    transition: opacity 0.3 ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(30px); */
+}
+.songcard:hover .play{
+    transform: translateY(0);
+    opacity: 1;
+}
+.play:hover{
+    background-color: rgb(67, 167, 67);
+    cursor: pointer;
+}
+.play img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.pause img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.play img:hover{
+    transform: scale(1.1);
+}
+.end{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
